@@ -98,7 +98,7 @@ public class MainActivity extends AppCompatActivity {
         // Note that you shouldn't try to do this if the cursor hasn't been set yet.
         // If you reach the end of the list of words, you should start at the beginning again.
         if (mData != null) {
-            if (mData.moveToNext()) {
+            if (!mData.moveToNext()) {
                 mData.moveToFirst();
             }
         }
